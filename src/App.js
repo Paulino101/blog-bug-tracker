@@ -1,12 +1,13 @@
 // Components
 import Introduction from "./components/Introduction";
 import NavBar from "./components/NavBar";
+
 // React Router
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
 import AuthenticationEntries from "./AuthenticationSection/Authentication";
+
 // entries
-const authenticationEntries = [
+const blogEntries = [
   {
     title: "Making the UI",
     date: "April 20,2022",
@@ -17,7 +18,7 @@ const authenticationEntries = [
   {
     title: "Firebase",
     date: "April 20,2022",
-    body: "After making the inputs it was time to add functionality. I chose to use Firebase because I loved their documentation. Also there was a lot of support online if I ever got stuck on something(which I did, a lot). I spent a good week implementing the email sign in and an extra week implementing the google sign in.",
+    body: "After making the inputs it was time to add functionality. I chose to use Firebase because I loved their documentation. Also there was a lot of support online if I ever got stuck on something(which I did, a lot). I spent a good week implementing the email sign in and an extra week implementing the google sign in. After implementing the sign in I also restyled the log in form a bit.",
     img: "www.placeholder.com",
     imgCaption: "caption about the image",
   },
@@ -30,7 +31,7 @@ function App() {
       <Routes>
         <Route
           path="/authentication"
-          element={<AuthenticationEntries entries={authenticationEntries} />}
+          element={<AuthenticationEntries entries={blogEntries} />}
         />
         <Route path="/" element={<Introduction />} />
       </Routes>
