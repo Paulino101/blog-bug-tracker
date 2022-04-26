@@ -22,6 +22,13 @@ const blogEntries = [
     img: "www.placeholder.com",
     imgCaption: "caption about the image",
   },
+  {
+    title: "Reset",
+    date: "April 26,2022",
+    body: "So I restarted the whole project. Why? well I was following tutorials on react-router-dom too heavily. While the implementations worked I didnt understand them at all so I decided to start from scratch. I was able to get the login/register forms up in a couple of hours and the next couple of days were spent relearning Protected routes and useContext(). I think this paid off as now I have a better understanding of Protected routes and useContext which I wouldnt have if I just kept copying tutorials.",
+    img: "",
+    imgCaption: "",
+  },
 ];
 
 function App() {
