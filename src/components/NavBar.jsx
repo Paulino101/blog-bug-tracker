@@ -50,6 +50,11 @@ function NavBar() {
                   <NavLink to="/authentication" className="nav-link">
                     Authentication
                   </NavLink>
+                  <li className="nav-item">
+                    <NavLink to="/crud" className="nav-link">
+                      C.R.U.D.
+                    </NavLink>
+                  </li>
                 </li>
               </ul>
             </div>

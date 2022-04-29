@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AuthenticationEntries from "./AuthenticationSection/Authentication";
 
 // entries
-const blogEntries = [
+const blogEntriesAuth = [
   {
     title: "Making the UI",
     date: "April 20,2022",
@@ -29,8 +29,25 @@ const blogEntries = [
     img: "",
     imgCaption: "",
   },
+  {
+    title: "Authetication Done",
+    date: "April 28,2022",
+    body: "authetication is done(except for google sign in on mobile). Not much to talk about really I just finished all the aforementioned items. Now onto C.R.U.D.",
+  },
 ];
 
+const blogEntriesCrud = [
+  {
+    title: "C.R.U.D. create read update delete",
+    date: "April 28, 2022",
+    body: "Now that authetication is done I can work on implementing C.R.U.D.. Today I set up the Read part of it. I honestly could probably finish the full implementation of the C.R.U.D. functions. I didnt because I want to give each of the four operations at least a day a two to work on the look of the app.",
+  },
+  {
+    title: " Change of Plans",
+    date: "April 28,2022",
+    body: "I am not gonna work component by component lol. I fully implemented crud. The big issues now is getting the page to render dynamically when i delete or update something in the database. From what I saw online i need to implement state into the functions so it re-renders. I originally thought of using useEffect() and putting a boolean in the params. This unfortunately caused an infinite loop so its back to the drawing board on that part of the app.",
+  },
+];
 function App() {
   return (
     <Router>
@@ -38,7 +55,11 @@ function App() {
       <Routes>
         <Route
           path="/authentication"
-          element={<AuthenticationEntries entries={blogEntries} />}
+          element={<AuthenticationEntries entries={blogEntriesAuth} />}
+        />
+        <Route
+          path="/crud"
+          element={<AuthenticationEntries entries={blogEntriesCrud} />}
         />
         <Route path="/" element={<Introduction />} />
       </Routes>
