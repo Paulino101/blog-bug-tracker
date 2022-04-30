@@ -47,6 +47,11 @@ const blogEntriesCrud = [
     date: "April 28,2022",
     body: "I am not gonna work component by component lol. I fully implemented crud. The big issues now is getting the page to render dynamically when i delete or update something in the database. From what I saw online i need to implement state into the functions so it re-renders. I originally thought of using useEffect() and putting a boolean in the params. This unfortunately caused an infinite loop so its back to the drawing board on that part of the app.",
   },
+  {
+    title: "Redirect !",
+    date: "April 29,2022",
+    body: "Still cant get the /create page to re render dynamically, I didnt want to spend too much time on it and get more frustrated. Instead I finally implemented redirect after login. It redireccts to the list of all issues so i styled them up a bit more. Working on this section has gave me the idea to filter issues on wether or not they have been solved. So back to youtube univiersity to see how to do that!",
+  },
 ];
 function App() {
   return (
