@@ -37,7 +37,7 @@ const blogEntriesAuth = [
   {
     title: "Styled",
     date: "May 1, 2022",
-    body: "Yo backc to authetication type stuff since Im done with the basic crud implementation. My next step is to get the component to re-render when theres an update to the database.",
+    body: "Yo backc to authetication type stuff since Im done with the basic crud implementation. Additionally finally got the issues to render dynamically with database changes. I just had to move the function outside the useEffect hook and it started working like a charm.",
   },
 ];
 
