@@ -34,6 +34,11 @@ const blogEntriesAuth = [
     date: "April 28,2022",
     body: "authetication is done(except for google sign in on mobile). Not much to talk about really I just finished all the aforementioned items. Now onto C.R.U.D.",
   },
+  {
+    title: "Styled",
+    date: "May 1, 2022",
+    body: "Yo backc to authetication type stuff since Im done with the basic crud implementation. My next step is to get the component to re-render when theres an update to the database.",
+  },
 ];
 
 const blogEntriesCrud = [
