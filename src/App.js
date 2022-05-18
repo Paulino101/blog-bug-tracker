@@ -5,6 +5,7 @@ import NavBar from "./components/NavBar";
 // React Router
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AuthenticationEntries from "./AuthenticationSection/Authentication";
+import HomeStretch from "./HomeStretch";
 
 // entries
 const blogEntriesAuth = [
@@ -37,7 +38,15 @@ const blogEntriesAuth = [
   {
     title: "Styled",
     date: "May 1, 2022",
-    body: "Yo backc to authetication type stuff since Im done with the basic crud implementation. Additionally finally got the issues to render dynamically with database changes. I just had to move the function outside the useEffect hook and it started working like a charm.",
+    body: "Yo back to authetication type stuff since Im done with the basic crud implementation. Additionally finally got the issues to render dynamically with database changes. I just had to move the function outside the useEffect hook and it started working like a charm.",
+  },
+];
+
+const homeStretchEntries = [
+  {
+    title: "Im Back",
+    date: "May 18, 2022",
+    body: "Its been a while since Ive updated this blog. While I was gone I made a ton of improvements. I added a landing page, updated styling for different viewports , added a dark mode, and also implemented filters to find a specific bug!.",
   },
 ];
 
@@ -70,6 +79,10 @@ function App() {
         <Route
           path="/crud"
           element={<AuthenticationEntries entries={blogEntriesCrud} />}
+        />
+        <Route
+          path="/homestretch"
+          element={<AuthenticationEntries entries={homeStretchEntries} />}
         />
         <Route path="/" element={<Introduction />} />
       </Routes>

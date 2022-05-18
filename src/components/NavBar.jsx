@@ -55,6 +55,11 @@ function NavBar() {
                       C.R.U.D.
                     </NavLink>
                   </li>
+                  <li className="nav-item">
+                    <NavLink to="/homestretch" className="nav-link">
+                      The Home Stretch!
+                    </NavLink>
+                  </li>
                 </li>
               </ul>
             </div>
